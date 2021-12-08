@@ -20,7 +20,15 @@ final class View1: UIView{
     lazy var label : UILabel = {
         let view = UILabel(frame: .zero)
         view.textAlignment = .center
+        view.numberOfLines = 0
+        view.textColor = .systemGreen
         view.backgroundColor = .white
+        return view
+    }()
+    
+    lazy var image : UIImageView = {
+        let img = UIImage(named: "FelipeMelo")
+        let view = UIImageView.init(image: img)
         return view
     }()
     
@@ -42,29 +50,36 @@ final class View1: UIView{
 extension View1: CodeView{
     func buildHierarchy() {
         addSubview(label)
+        addSubview(image)
         addSubview(button)
     }
     
     func configConstraints() {
         label.snp.makeConstraints { make in
-            make.height.greaterThanOrEqualTo(150)
+            make.height.greaterThanOrEqualTo(50)
             make.topMargin.equalToSuperview().offset(20)
             make.left.right.equalToSuperview().offset(15).inset(15)
+            make.bottomMargin.greaterThanOrEqualTo(image.snp.top)
+        }
+        image.snp.makeConstraints { make in
+            make.topMargin.equalTo(label.snp.bottom).offset(20)
+            make.centerX.equalToSuperview()
             make.bottomMargin.greaterThanOrEqualTo(button.snp.top)
+            make.height.equalTo(150)
         }
         button.snp.makeConstraints { make in
             make.width.equalTo(100)
             make.height.equalTo(60)
             make.centerX.equalToSuperview()
-            make.top.equalTo(label.snp.bottom).offset(20)
+            make.top.equalTo(image.snp.bottom).offset(20)
             make.bottomMargin.equalToSuperview().inset(50)
         }
     }
     
     func additionalConfig() {
-        label.text = "RONALDO BRILHA MUITO NO CURINTIA"
-        button.setTitle("AAAA", for: .normal)
-        backgroundColor = .blue
+        label.text = "IHHHHH LIBERTADORES EU SOU TRIIIII... \nBRASILEIRAO NEM VOOU FALAR... \nCHEIRO MEU CARALHO... \nESTOU EM OUTRO PATAMARR!!!!"
+        button.setTitle("SOU TRI", for: .normal)
+        backgroundColor = .systemGreen
 
     }
     
