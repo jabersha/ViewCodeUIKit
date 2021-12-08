@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF30B60027605E8B00750679 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30B5FF27605E8B00750679 /* CodeView.swift */; };
 		DF50348A275C641700466F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF503489275C641700466F87 /* AppDelegate.swift */; };
 		DF50348C275C641700466F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50348B275C641700466F87 /* SceneDelegate.swift */; };
 		DF50348E275C641700466F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50348D275C641700466F87 /* ViewController.swift */; };
 		DF503493275C641900466F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF503492275C641900466F87 /* Assets.xcassets */; };
 		DF503496275C641900466F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF503494275C641900466F87 /* LaunchScreen.storyboard */; };
+		DF60F2DB275C720900FEF76F /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60F2DA275C720900FEF76F /* View1.swift */; };
+		DFFED27527606AE700798EEC /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFED27427606AE600798EEC /* SnapKit.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF30B5FF27605E8B00750679 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		DF503486275C641700466F87 /* ViewCodeUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewCodeUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF503489275C641700466F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF50348B275C641700466F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		DF503492275C641900466F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF503495275C641900466F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF503497275C641900466F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF60F2DA275C720900FEF76F /* View1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
+		DFFED27427606AE600798EEC /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = ViewCodeUIKit/Util/SnapKit.xcframework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +35,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFED27527606AE700798EEC /* SnapKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF30B5FE27605E6500750679 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DFFED27427606AE600798EEC /* SnapKit.xcframework */,
+				DF30B5FF27605E8B00750679 /* CodeView.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		DF50347D275C641700466F87 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +70,14 @@
 		DF503488275C641700466F87 /* ViewCodeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF30B5FE27605E6500750679 /* Util */,
 				DF503489275C641700466F87 /* AppDelegate.swift */,
 				DF50348B275C641700466F87 /* SceneDelegate.swift */,
 				DF50348D275C641700466F87 /* ViewController.swift */,
 				DF503492275C641900466F87 /* Assets.xcassets */,
 				DF503494275C641900466F87 /* LaunchScreen.storyboard */,
 				DF503497275C641900466F87 /* Info.plist */,
+				DF60F2DA275C720900FEF76F /* View1.swift */,
 			);
 			path = ViewCodeUIKit;
 			sourceTree = "<group>";
@@ -136,6 +154,8 @@
 			files = (
 				DF50348E275C641700466F87 /* ViewController.swift in Sources */,
 				DF50348A275C641700466F87 /* AppDelegate.swift in Sources */,
+				DF60F2DB275C720900FEF76F /* View1.swift in Sources */,
+				DF30B60027605E8B00750679 /* CodeView.swift in Sources */,
 				DF50348C275C641700466F87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
