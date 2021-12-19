@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     override func loadView(){
-        let view = View1()
+        let view = View2()
         self.view = view
     }
     override func viewDidLoad() {
@@ -19,4 +19,5 @@ class ViewController: UIViewController {
 
 
 }
+
 

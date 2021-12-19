@@ -65,7 +65,8 @@ extension View1: CodeView{
             make.topMargin.equalTo(label.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
             make.bottomMargin.greaterThanOrEqualTo(button.snp.top)
-            make.height.equalTo(150)
+            make.height.lessThanOrEqualTo(300)
+            make.width.lessThanOrEqualTo(300)
         }
         button.snp.makeConstraints { make in
             make.width.equalTo(100)
